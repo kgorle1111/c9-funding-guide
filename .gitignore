@@ -1,0 +1,47 @@
+# --- Drupal / Composer (managed code never committed; composer.json is the source of truth) ---
+/vendor/
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+/web/libraries/
+/web/sites/*/files/
+/web/sites/*/private/
+/web/sites/*/settings.local.php
+/web/sites/*/services.local.yml
+
+# --- Secrets & environment (never commit; per global rule) ---
+.env
+.env.*
+*secrets*
+*.key
+*.pem
+
+# --- Database dumps & backups (may contain form submissions / PII) ---
+*.sql
+*.sql.gz
+*.mariadb
+/backups/
+
+# --- DDEV local state (commit .ddev/config.yaml only) ---
+/.ddev/db_snapshots/
+/.ddev/sequelpro.spf
+/.ddev/import-db/
+/.ddev/import.yaml
+/.ddev/.dbimageBuild/
+/.ddev/.ddev-docker-compose*.yaml
+/.ddev/.homeadditions/
+/.ddev/.importdb*
+/.ddev/.sshimageBuild/
+/.ddev/.webimageBuild/
+
+# --- Static export build output (regenerated; deployed from CI or gh-pages branch) ---
+/html/
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+*.swp
+
+# --- Raw photos before crop/resize (only web-exported versions belong in Drupal's files dir anyway) ---
+/photos-raw/
