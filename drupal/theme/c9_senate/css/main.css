@@ -1,0 +1,38 @@
+/*
+ * c9_senate main stylesheet.
+ * Expects css/tokens.css (copied in from /design/tokens.css — see README-THEME.md)
+ * to define the custom properties used below, e.g.:
+ *   --c9-color-primary, --c9-color-accent, --c9-color-text,
+ *   --c9-font-heading, --c9-font-body, --c9-space-*
+ * tokens.css is loaded first by c9_senate.libraries.yml, so no @import needed.
+ */
+
+body {
+  font-family: var(--c9-font-body, system-ui, sans-serif);
+  color: var(--c9-color-text, #1a1a1a);
+}
+
+h1, h2, h3 {
+  font-family: var(--c9-font-heading, inherit);
+  color: var(--c9-color-primary, #003c6c); /* fallback: UCSC blue */
+}
+
+/* Remaining-funds block (templates/c9-remaining-funds.html.twig) */
+.c9-funds {
+  display: flex;
+  gap: var(--c9-space-m, 1rem);
+  padding: var(--c9-space-m, 1rem);
+  border: 2px solid var(--c9-color-primary, #003c6c);
+  border-radius: 8px;
+}
+
+.c9-funds__item span {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.c9-funds__item--remaining {
+  font-weight: 700;
+  color: var(--c9-color-accent, #fdc700); /* check contrast on light bg! */
+}

@@ -45,6 +45,9 @@ project for the UCSC Admissions Web Designer application (deadline **Oct 5, 2026
 - [ ] Rebuild the retired Google Form as a Webform: org name, contact, C9 affiliate?, event, date,
       amount requested, justification-if-over-$200, file upload for budget breakdown.
 - [ ] Policies **linked at the top of the form** + required "I have read the guidelines" checkbox.
+- [ ] Deal-breakers enforced ON the form (from review/PERSONA-WALKTHROUGH.md): conditional
+      justification textarea appears when C9-affiliate=No AND amount > $200; food-costs warning
+      shown next to the budget upload — don't rely on the checkbox alone.
 - [ ] Email handler → c9senate@ucsc.edu (test with ddev's Mailpit; don't wire real email until board rollout).
 - Checkpoint: submit a test request end-to-end, see it in Results + Mailpit.
 
