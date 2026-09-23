@@ -5,7 +5,8 @@ php_version: "8.4"
 webserver_type: nginx-fpm
 xdebug_enabled: false
 additional_hostnames: []
-additional_fqdns: []
+additional_fqdns:
+    - c9.localhost
 database:
     type: mariadb
     version: "11.8"
