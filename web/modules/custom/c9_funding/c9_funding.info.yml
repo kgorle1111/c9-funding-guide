@@ -1,0 +1,5 @@
+name: C9 Funding
+type: module
+description: 'Funding transparency dashboard block for the College Nine Senate site.'
+package: Custom
+core_version_requirement: ^11
