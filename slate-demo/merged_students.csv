@@ -1,0 +1,7 @@
+id,first_name,last_name,email,dob,phone,high_school,intended_major,updated_at,merged_from
+P005,Aaliyah,Brooks,abrooks@example.com,2007-11-30,,Santa Cruz High,Psychology,2026-01-05,P005
+P010,Emma,Chen,e.chen.art@example.com,2008-01-08,650-555-0142,Palo Alto High School,Art,2026-05-20,P008;P010
+P002,Maya,Fernandez,MAYA.FERNANDEZ@example.com,2008-03-14,831-555-0101,Watsonville High School,Marine Biology,2026-04-22,P001;P002
+P004,Jordan,Lee,jlee2028@example.com,2008-07-02,408-555-0199,Lynbrook High,Computer Science,2026-03-15,P003;P004
+P009,Noah,Okafor,nokafor@example.com,2007-12-19,916-555-0166,Sacramento Charter,History,2026-04-11,P009
+P007,Diego,Ramírez,diego.r@example.com,2008-09-21,559-555-0117,Central High (Fresno),Economics,2026-05-02,P006;P007
