@@ -1,7 +1,7 @@
 # C9 Funding Guide — demo narration (12 scenes)
 
 ## Scene 1 — `01-home` · The site
-**Say:** "Hi, I'm Kannishk, VP of Finance for College Nine Senate at UC Santa Cruz. Our funding process used to live in scattered docs and email threads, so I built this site in Drupal 11 to fix that, end to end."
+**Say:** "Hi, I'm Kannishk, VP of Finance for College Nine Senate at UC Santa Cruz. Our funding process used to live in scattered docs and email threads, so I built this site in Drupal 11 to fix that."
 
 ## Scene 2 — `02-mobile` · Phones first
 **Say:** "Students will open this on a phone between classes, so every page works at phone width. The remaining funds number stacks to the top on small screens, because that's the number people come for."
@@ -10,7 +10,7 @@
 **Say:** "How to Request walks a club through the whole path. Submit the form, we reach out within a day or two, you give a short presentation on a Thursday, and a decision arrives by email."
 
 ## Scene 4 — `04-guidelines` · The rules, up front
-**Say:** "The guidelines page puts every rule in plain language, including what we can't fund. I wrote and proofread all of this myself, since a funding guide with typos wouldn't inspire much confidence."
+**Say:** "The guidelines page puts every rule in plain language, including what we can't fund. Every page was written for students and proofread twice, since a funding guide with typos wouldn't inspire much confidence."
 
 ## Scene 5 — `05-faq` · Real questions
 **Say:** "The FAQ answers the questions clubs actually send us. Can food be funded, how long decisions take, and whether groups outside College Nine can apply."
@@ -34,4 +34,4 @@
 **Say:** "Here's the editing side. Every page is content in Drupal, so updating text or swapping a photo is a form, not a code change. Anyone on our board could learn this in about ten minutes."
 
 ## Scene 12 — `12-admin-content` · Everything in one place
-**Say:** "And all of it, pages, awards, and form submissions, lives in one content list. I cropped and prepared every photo from our real events, and I'd love to bring this kind of care to the Admissions site. Thanks for watching."
+**Say:** "And all of it, pages, awards, and form submissions, lives in one content list. The photos come from our real events, cropped and sized for the web, and I'd love to bring this kind of care to the Admissions site. Thanks for watching."
