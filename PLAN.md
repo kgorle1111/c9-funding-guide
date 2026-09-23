@@ -64,18 +64,33 @@ project for the UCSC Admissions Web Designer application (deadline **Oct 5, 2026
 - Checkpoint: site looks like College Nine, not stock Drupal; screenshots read as professional.
 
 ## Phase 6 — Static export → GitHub Pages (≈2h)
+- [ ] **Publication gate (from review/CRITIQUE.md):** before Pages goes live, get a one-line
+      written OK from the Senate chair or advisor AND email the current Google Site owner.
+      Until that OK exists, the site header carries a visible banner:
+      "Proposal by the VP of Finance — not yet an official College Nine Senate publication."
+      Org names in the transparency table stay fictional until real data is board-approved.
 - [ ] `ddev composer require drupal/tome` → `ddev drush tome:static` → static HTML in `/html`.
+      (Smoke-test `tome:static` once at the END of Phase 2 so a Views/Tome surprise shows up early.)
 - [ ] Push to `gh-pages` branch (or /docs) of the GitHub repo; enable Pages.
 - [ ] Static form can't submit — swap the form page's submit for a clearly labeled
       "live form runs on the Drupal site — demo video below" note, or link the video.
 - Checkpoint: public URL loads, all pages browsable on phone + desktop.
 
 ## Phase 7 — Demo video + application (≈2h)
-- [ ] `/narrate` a 3–4 min video: assignment framing → Photopea crop → edit a node → place a block
-      → publish → submit a funding request → transparency page updates → 30s of the sub-theme CSS in the editor.
+- [ ] Record the 3–4 min video **in your own voice, screen-recorded live** (no /narrate synthetic
+      voiceover — the reviewer must believe you did the work): assignment framing → Photopea crop
+      → edit a node → place a block → publish → submit a funding request → transparency page updates
+      → 30s of the sub-theme CSS. Show ordinary, humble CMS tasks; no AI tooling on camera.
 - [ ] Update resume "Web & Design Projects" section to match what was actually built; add the Pages URL.
-- [ ] Message Jennifer via "Ask Jennifer": two lines + video link + Pages link.
+- [ ] Message Jennifer via "Ask Jennifer": two lines + video link + Pages link. Pitch = the humble
+      CMS story (photos, pages, forms, proofreading); the AI-engineer angle only if asked.
 - [ ] Separate track (not for the application): present site to Senate board for adoption + real-data approval.
+
+## Fallback (pre-committed, from review/CRITIQUE.md)
+If Phase 0 (DDEV/Drupal setup) exceeds ~3 hours of fighting the environment: stop, and build the
+same site as hand-written static HTML/CSS using design/tokens.css + content/ + an embedded Google
+Form. That directly demonstrates the posting's literal requirement (hand-coded HTML/CSS) with zero
+Drupal risk; "willingness to learn Drupal" carries the rest. Decide at hour 3, not hour 8.
 
 ## Explicitly out of scope
 - Real email delivery, real budget figures on the public site (board approval first), user accounts
