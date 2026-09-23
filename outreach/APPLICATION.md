@@ -5,7 +5,7 @@ Kannishk Naidu Gorle | Deadline: Oct 5, 2026 | Contact: Jennifer Wright, Communi
 
 ## 1. "Ask Jennifer" Handshake message (3–4 sentences)
 
-Hi Jennifer, I'm Kannishk, a CS junior and VP of Finance for the College Nine Senate, where I built our funding website in Drupal 11 myself, from content types and webforms to a budget transparency page and the photos I cropped for it. I'd love to bring that same care to the Admissions site. Here's a short narrated walkthrough of the site: [VIDEO LINK], and the live demo: [SITE LINK]. Is there anything beyond the Handshake application you'd like to see before Oct 5?
+Hi Jennifer, I'm Kannishk, a CS junior and VP of Finance for the College Nine Senate, where I built our funding website in Drupal 11 myself, from content types and webforms to a budget transparency page and the photos I cropped for it. I'd love to bring that same care to the Admissions site. Here's a short narrated walkthrough of the site: (demo video attached), and the live demo: https://kgorle1111.github.io/c9-funding-guide/. Is there anything beyond the Handshake application you'd like to see before Oct 5?
 
 ---
 
