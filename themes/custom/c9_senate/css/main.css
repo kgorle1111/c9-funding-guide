@@ -1,0 +1,207 @@
+/*
+ * c9_senate main stylesheet — consumes css/tokens.css (loaded first by
+ * c9_senate.libraries.yml). Additive overrides on Olivero; no resets.
+ * Component specs: design/DESIGN-SYSTEM.md · layouts: design/LAYOUTS.md
+ */
+
+/* ---- Base + Olivero remap ---------------------------------------- */
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+/* Recolor Olivero's own primaries so core buttons/links/header follow brand. */
+:root {
+  --color--primary-50: var(--c9-blue);
+  --color--primary-60: var(--c9-blue-dark);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  color: var(--c9-blue);
+  line-height: var(--leading-tight);
+}
+
+a {
+  color: var(--color-link);
+}
+
+/* Gold brand stripe across the top of every page. */
+.site-header {
+  border-top: 4px solid var(--c9-gold);
+}
+
+/* ---- Stat cards (transparency dashboard) -------------------------- */
+
+.c9-stat-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: var(--space-4);
+  margin-block: var(--space-6);
+}
+
+.c9-stat-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-6);
+  box-shadow: var(--shadow-sm);
+}
+
+.c9-stat-card--hero {
+  background: var(--c9-blue);
+  border: none;
+  border-bottom: 4px solid var(--c9-gold);
+}
+
+.c9-stat-card__label {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-1);
+}
+
+.c9-stat-card--hero .c9-stat-card__label {
+  color: var(--c9-gold); /* gold text on blue: AA per tokens.css table */
+}
+
+.c9-stat-card__value {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-bold);
+  color: var(--c9-blue);
+}
+
+.c9-stat-card--hero .c9-stat-card__value {
+  font-size: var(--text-stat);
+  color: var(--color-text-inverse);
+}
+
+/* ---- Awards table -------------------------------------------------- */
+
+.c9-table-scroll {
+  overflow-x: auto; /* the only horizontal scroller on the page */
+}
+
+.c9-awards-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-base);
+}
+
+.c9-awards-table th {
+  background: var(--c9-blue);
+  color: var(--color-text-inverse);
+  text-align: left;
+  padding: var(--space-2) var(--space-3);
+  font-weight: var(--weight-medium);
+}
+
+.c9-awards-table td {
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.c9-awards-table .c9-amount {
+  text-align: right;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.c9-sum-row td {
+  background: var(--c9-blue-tint);
+  font-weight: var(--weight-bold);
+  border-bottom: 2px solid var(--c9-blue);
+}
+
+.c9-sum-label {
+  text-align: right;
+}
+
+/* ---- Status badges (color + text, per WCAG 1.4.1) ------------------ */
+
+.c9-badge {
+  display: inline-block;
+  padding: 0 var(--space-2);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+}
+
+.c9-badge--awarded {
+  color: var(--color-success);
+  background: var(--color-success-bg);
+}
+
+.c9-badge--denied {
+  color: var(--color-danger);
+  background: var(--color-danger-bg);
+}
+
+/* ---- Callouts ------------------------------------------------------ */
+
+.c9-callout {
+  background: var(--c9-blue-tint);
+  border-left: 4px solid var(--c9-blue);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  margin-block: var(--space-4);
+}
+
+.c9-callout--warning {
+  background: var(--color-warn-bg);
+  border-left-color: var(--c9-gold-dark);
+}
+
+/* ---- Forms (styles Drupal/Webform native markup) ------------------- */
+
+.form-item label {
+  font-weight: var(--weight-medium);
+}
+
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item input[type="number"],
+.form-item textarea,
+.form-item select {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.form-item input:focus-visible,
+.form-item textarea:focus-visible,
+.form-item select:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* ---- Responsive ---------------------------------------------------- */
+
+@media (max-width: 47.9rem) {
+  .c9-stat-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* Hero (remaining funds) stacks first on phones per LAYOUTS.md. */
+  .c9-stat-card--hero {
+    order: -1;
+  }
+}
+
+/* ---- Photos --------------------------------------------------------- */
+
+.c9-photo {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  margin-block: var(--space-4);
+}
