@@ -1,0 +1,27 @@
+name: C9 Senate
+type: theme
+description: 'College Nine Senate sub-theme of Olivero.'
+package: Custom
+core_version_requirement: ^11
+base theme: olivero
+
+libraries:
+  - c9_senate/global
+
+# Regions are NOT inherited from the base theme. This list is copied from
+# core/themes/olivero/olivero.info.yml — verify it against your Drupal 11
+# checkout and re-copy if core has changed it.
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  hero: 'Hero (full width)'
+  highlighted: 'Highlighted'
+  breadcrumb: 'Breadcrumb'
+  social: 'Social'
+  content_above: 'Content Above'
+  content: 'Content'
+  sidebar: 'Sidebar'
+  content_below: 'Content Below'
+  footer_top: 'Footer Top'
+  footer_bottom: 'Footer Bottom'
